@@ -1,0 +1,77 @@
+/*    --------------------------------------------------
+    :: General
+    -------------------------------------------------- */
+
+.esconder{
+    display: none;
+}
+
+.pull-right {
+        position: relative!important;
+    top: 10px!important;
+}
+    
+.panel {
+    margin-top: 15px !important;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #353535;
+}
+.content h1 {
+    text-align: center;
+}
+.content .content-footer p {
+    color: #6d6d6d;
+    font-size: 9px;
+    text-align: center;
+}
+.content .content-footer p a {
+    color: inherit;
+    font-weight: bold;
+}
+
+/*  --------------------------------------------------
+    :: Table Filter
+    -------------------------------------------------- */
+.panel {
+    border: 1px solid #ddd;
+    background-color: #f1f1f1;
+}
+.panel .btn-group {
+    margin: 15px 0 30px;
+}
+.panel .btn-group .btn {
+    transition: background-color .3s ease;
+}
+.table-filter {
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+}
+
+.table-filter tbody tr td {
+    padding: 0px;
+    vertical-align: middle;
+    border-top-color: #eee;
+}
+.table-filter tbody tr.selected td {
+    background-color: #eee;
+}
+.table-filter tr td:first-child {
+    width: 38px;
+}
+.table-filter tr td:nth-child(2) {
+    width: 35px;
+}
+.ckbox {
+    position: relative;
+}
+.ckbox input[type="checkbox"] {
+    opacity: 0;
+}
+
+
+.panel-default {
+    box-shadow: 3px 10px 11px 3px #0000002e !important;
+}
