@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.views.generic import View, TemplateView, CreateView, UpdateView, FormView, ListView
-from core.youtube_API_search import Youtube
+
+from core.youtube_API_search import Youtube # <<<<<< caminho para a biblioteca
 import json
 
 class IndexView(TemplateView):
