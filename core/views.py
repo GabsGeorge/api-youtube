@@ -12,9 +12,13 @@ class IndexView(TemplateView):
 		youtube = Youtube()
 		
 		youtube.conexao('AIzaSyDkHQY3gk-rt614-tAm6_u1DMY_nk9nyg8') # chave api
-		busca_video = youtube.busca('linguagem python') # termo de busca
+		
+		busca_videos = youtube.busca_video('noticias') # Termo de busca
+		canal_videos = youtube.canal_video('UCkUq-s6z57uJFUFBvZIVTyg')# Id do canal
 
-		context['buscas'] = busca_video
+
+		context['busca_videos'] = busca_videos
+		context['canal_videos'] = canal_videos
 		return context
 
 

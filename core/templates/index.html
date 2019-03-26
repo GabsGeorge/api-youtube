@@ -14,9 +14,18 @@
 </head>
 
 <body>
-	{% for busca in buscas %} 
-	<p>{{busca}}</p>
-	{%endfor%}
+	<div class="container">
+		<div>	
+			{% for busca in busca_videos %} 
+			<p>{{busca}}</p>
+			{%endfor%}
+		</div>
+		<div>
+			{% for busca_canal in canal_videos %} 
+			<p>{{busca_canal}}</p>
+			{%endfor%}
+		</div>
+	</div>
 </body>
 
 </html>
