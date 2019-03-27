@@ -9,7 +9,7 @@ class Youtube:
 
 	####### Get videos por termo de busca #######
 	def busca_video(self, busca):
-		req = self.youtube.search().list(part='snippet', q=busca ,type='video',maxResults=50)
+		req = self.youtube.search().list(part='snippet', q=busca ,type='video',maxResults=5)
 		res = req.execute()
 		return (res['items'])
 
@@ -26,7 +26,7 @@ class Youtube:
 	    while 1:
 	        res = self.youtube.playlistItems().list(playlistId=playlist_id, 
 	                                           part='snippet', 
-	                                           maxResults=50,
+	                                           maxResults=5,
 	                                           pageToken=next_page_token).execute()
 	        videos += res['items']
 	        next_page_token = res.get('nextPageToken')

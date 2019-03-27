@@ -11,6 +11,8 @@ urlpatterns = [
 
 	path('index/', views.IndexView.as_view(), name='index'),
 
+	#url(r'^teste/$', views.teste, name='teste'),
+
 
 
 
