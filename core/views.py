@@ -10,7 +10,7 @@ class IndexView(TemplateView):
 	def get_context_data(self, **kwargs):
 		context = super(IndexView, self).get_context_data(**kwargs)
 		youtube = Youtube()
-		youtube.conexao('AIzaSyCsVQmCKQ2aEyOrvO33oGiVG0mXd772qg4') # chave api
+		youtube.conexao('##Chave Api') # chave api
 
 		busca_videos = youtube.busca_video("noticias") # Termo de busca
 		canal_videos = youtube.canal_video('UCkUq-s6z57uJFUFBvZIVTyg')# Id do canal
